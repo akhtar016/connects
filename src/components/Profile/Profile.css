@@ -1,0 +1,11 @@
+.profile-container{
+    display: flex;
+}
+.player-container{
+    width: 75%;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-right: 1px solid gray;
+}
+
+
