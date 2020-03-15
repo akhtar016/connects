@@ -1,9 +1,12 @@
 import React from 'react';
-import './Player.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import './Player.css';
+
 
 const Player = (props) => {
 
-    console.log(props);
+    
 
     const{name,imgLink,info,email,phone, yearlyIncome} = props.player;
 
@@ -18,9 +21,13 @@ const Player = (props) => {
            <div className="info">
             <p><b>Email: </b>{email}</p>
             <p><b>Phone: </b>{phone}</p>
-            <p><b>Annual Salary: </b>{yearlyIncome}</p>
+            <p><b>Annual Salary: </b> <span>$</span>{yearlyIncome}</p>
            </div>
-           <p><button>Connect</button></p>
+           <p><button
+                
+                onClick={()=> props.handleAddPlayer(props.player)}
+                
+                ><FontAwesomeIcon icon={faPlus} /></button></p>
        </div>
        
     );
