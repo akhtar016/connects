@@ -11,9 +11,9 @@ const Player = (props) => {
     const{name,imgLink,info,email,phone, yearlyIncome} = props.player;
 
 
-    return (  
+    return (  <div className= "cardPosition">
 
-       <div className="card">
+<div className="card">
            <img src={imgLink} alt="" width='100%'/>
            <h1>{name}</h1>
            <p>{info}</p>
@@ -29,6 +29,15 @@ const Player = (props) => {
                 
                 ><FontAwesomeIcon icon={faPlus} /></button></p>
        </div>
+
+
+    </div>
+        
+
+
+        
+
+       
        
     );
 };

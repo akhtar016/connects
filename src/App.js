@@ -15,7 +15,12 @@ return (
     {/* {
       people.map(player => <Profile players={player}></Profile>)
     } */}
+
+   
     <Profile></Profile>
+
+    
+    
 
 
 

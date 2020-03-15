@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Summary.css"
 
 const Summary = (props) => {
 
@@ -19,7 +20,7 @@ const Summary = (props) => {
 
 
     return (
-        <div>
+        <div className="summaryComponent">
             <div className="summary">
 
             <h1>{playerList.length}</h1>   

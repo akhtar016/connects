@@ -3,7 +3,14 @@
     max-width: 300px;
     margin: auto;
     text-align: center;
+    margin-left: 15px;
+    margin-top: 10px;
   }
+
+ .cardPosition{
+   display:inline-flex;
+
+ }
   
   .title {
     color: grey;
