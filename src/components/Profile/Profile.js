@@ -44,11 +44,26 @@ const Profile = () => {
       
     ]
 
-   // const {name,imgLink,info,email,yearlyIncome,phone} = props.players;
 
-    //const [profile, setProfile] = useState(props);
 
-    //const [players, setPlayers] = useState(people);
+    people.sort(function() { return 0.5 - Math.random() });
+
+    // const shuffle = a => {
+
+    //     for (let i= a.length; i; i --){
+    //         let j = Math.floor(Math.random()*1);
+    //         [a[i-1], a[j]]  = [a[j], a[i-1]];
+
+    //     }
+    // }
+    // shuffle(people);
+    
+    
+
+    
+
+    //var shuffle = require(people);
+
 
     const handleAddPlayer = (player) => {
         console.log("Player-added",player);
@@ -57,12 +72,14 @@ const Profile = () => {
 
         setPlayerList(newPlayer);
 
-        
+
 
         
     }
 
     const [playerList,setPlayerList] = useState([]);
+
+    
 
 
 
